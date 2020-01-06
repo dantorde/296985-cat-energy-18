@@ -1,0 +1,21 @@
+.adress__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+.adress__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.adress--img {
+    vertical-align: bottom;
+}
+
+.catalog-page-adress {
+  background-color:  #f2f2f2;
+}

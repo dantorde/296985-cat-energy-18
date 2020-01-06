@@ -1,0 +1,36 @@
+.catalog-banner {
+  min-height: 289px;
+  margin: 40px 20px;
+
+  background: $color-promo-green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+}
+
+.catalog-banner--intro{
+  position: relative;
+
+  width: 160px;
+  margin: 0px auto;
+  padding-top: 170px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  font-weight: 400;
+  color: $font-color-white;
+  text-align: center;
+
+    &::after {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: 50%;
+    margin-left: -27px;
+
+    display: block;
+    width: 55px;
+    height: 60px;
+
+    background: url("../img/icon-gift.svg") no-repeat;
+  }
+}
+

@@ -1,0 +1,96 @@
+.catalog-type {
+  margin-top: 20px;
+}
+
+.catalog-type__block {
+  display: block;
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.catalog-type__block--header {
+  position: relative;
+  padding-left: 70px;
+  margin: 10px 0 30px 0;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: $font-color-black;
+  line-height: 37.02px;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: - 5px;
+    left: 0px;
+
+    display: block;
+    width: 50px;
+    height: 51px;
+
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    z-index: 1;
+  }
+}
+
+.catalog-slim .catalog-type__block--header::before {
+  left: 8px;
+  top: -5px;
+  background-image: url("../img/icon-cat-slim.svg");
+  width: 35px;
+  height: 49px;
+}
+
+.catalog-pro .catalog-type__block--header::before {
+  left: -10px;
+  top: 7px;
+  background-image: url("../img/icon-cat-pro.svg");
+  width: 67px;
+  height: 28px;
+}
+
+.catalog-type__block--intro {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+  color: $font-color-grey;
+  line-height: 18px;
+
+  border-bottom: 1px solid #dadada;
+}
+
+.catalog-type__link {
+  position: relative;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $font-color-black;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: -34px;
+
+    display: block;
+    width: 25px;
+    height: 12px;
+
+    background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  }
+}
+
