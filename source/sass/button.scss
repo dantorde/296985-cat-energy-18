@@ -1,0 +1,46 @@
+.button {
+  padding: 10px 0 10px 0;
+
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: $font-color-white;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: $color-button-green;
+  border: none;
+  cursor: pointer;
+}
+
+.promo__button {
+  display: block;
+  margin: auto;
+  width: 280px;
+}
+
+.catalog-item__button-buy {
+  display: block;
+  width: 280px;
+
+  font-size: 16px;
+}
+
+.lazy-load__button {
+  display: block;
+  width: 280px;
+
+  color: $font-color-grey;
+  font-size: 16px;
+
+  background-color: #f2f2f2;
+}
+
+.program-form__submit {
+  display: block;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

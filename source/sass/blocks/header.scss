@@ -1,0 +1,30 @@
+.header {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 19px;
+
+  border-bottom: solid 1px #ededed;
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 18px;
+
+  vertical-align: bottom;
+
+  border: none;
+  background: url("../img/icon-mobile-menu.svg") no-repeat;
+  cursor: pointer;
+}
+
+
+.main-nav__list {
+  display: none;
+}
+
+
