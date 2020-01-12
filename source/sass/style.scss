@@ -1,5 +1,7 @@
 @import "variables.scss";
 @import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-menu-list.scss";
 @import "global.scss";
 @import "fonts.scss";
 @import "button.scss";
@@ -8,8 +10,11 @@
 @import "blocks/catalog-type.scss";
 @import "blocks/principles.scss";
 @import "blocks/example.scss";
-@import "blocks/adress.scss";
+@import "blocks/address.scss";
 @import "blocks/footer.scss";
+@import "blocks/social.scss";
 @import "blocks/catalog-list.scss";
+@import "blocks/catalog-plus.scss";
 @import "blocks/catalog-banner.scss";
-@import "blocks/program-form.scss";
+@import "blocks/form.scss";
+@import "blocks/container.scss";

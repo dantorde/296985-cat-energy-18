@@ -3,9 +3,15 @@
   margin: 40px 20px;
 
   background: $color-promo-green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+
+    background: $color-promo-green url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
+  }
 }
 
-.catalog-banner--intro{
+.catalog-banner__intro{
   position: relative;
 
   width: 160px;
@@ -31,6 +37,17 @@
     height: 60px;
 
     background: url("../img/icon-gift.svg") no-repeat;
+
+      @media (min-width: $tablet-width) {
+        top: 65px;
+        left: -300px;
+      }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 425px;
+    padding-top: 75px;
+
+    text-align: left;
   }
 }
-

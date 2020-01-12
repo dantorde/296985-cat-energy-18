@@ -1,9 +1,10 @@
 .example {
-  background-color: #f2f2f2;
-}
+  background-color: $background-gray;
 
-.example__block-wrapper {
-  padding: 20px;
+  @media (min-width:$tablet-width){
+    padding-top: 0;
+    background-image: linear-gradient(to bottom, white 57.3%, $background-gray 57.3%);
+  }
 }
 
 .example__block {
@@ -20,36 +21,57 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
 
+  @media (min-width:$tablet-width) {
+    width: 165px;
+    margin-right: 40px;
+    padding-top: 22px;
+  }
 }
 
 .example__header {
   margin-bottom: 20px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 36px;
   font-weight: 400;
   color: $font-color-black;
   line-height: 60px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__block__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   color: $font-color-black;
+
+  @media (min-width:$tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .example__wrapper {
   display: flex;
   justify-content: space-between;
+  max-width: 320px;
+  margin: auto;
+
+  @media (min-width:$tablet-width) {
+    max-width: 420px;
+    margin: 0;
+  }
 }
 
 .example__block__description {
   position: absolute;
   bottom: -16px;
-  left: 18px;
+  left: -20px;
 
   width: 55px;
   padding-left: 16px;
@@ -57,64 +79,90 @@
 
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $font-color-grey;
 
-  background-color: #f2f2f2;
+  background-color: $background-gray;
 
+  @media (min-width:$tablet-width) {
+    bottom: -5px;
+
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    font-size: 14px;
+
+    background-color: #fff;
+  }
 }
 
 .example__block__costs {
   margin: 30px 0 35px 0;
 
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   color: $font-color-black;
+
+  @media (min-width:$tablet-width) {
+    max-width: 200px;
+
+    font-size: 20px;
+    text-align: right;
+  }
 }
 
 .example__intro {
   padding-bottom: 25px;
+
+  @media (min-width:$tablet-width) {
+    margin-top: 60px;
+    margin-bottom: 25px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .before-after__image {
   display: none;
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .before-after__image--active {
   display: block;
+  margin: auto;
 }
 
 .example__stripe {
   display: flex;
   justify-content: space-between;
-	width: 200px;
-	margin: auto;
-	margin-bottom: 15px;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 15px;
+  padding-bottom: 35px;
 }
 
 .example__stripe-link {
-  font-family: "Oswald", sans-serif;
-  color: #111111;
+  font-family: $oswald;
+  color: $font-color-black;
   text-transform: uppercase;
-	font-size: 16px;
+  font-size: 16px;
   line-height: 20px;
 }
-
 
 .example__slider {
   position: relative;
   height: 12px;
   width: 82px;
-	
+
   border: 1px solid #cdcdcd;
   border-radius: 10px;
   background-color: white;
 }
-
 
 .example__slider-in {
   position: absolute;
@@ -122,7 +170,12 @@
   left: 4px;
   width: 35px;
   height: 6px;
-	
-  background-color: #68b738;
+
+  background-color: $background-green;
   border-radius: 10px;
+}
+
+.example__wrapper-tablet {
+  display: flex;
+  justify-content: space-between;
 }
