@@ -1,48 +1,73 @@
-.program-form{
-
+.form{
   margin-bottom: 30px;
+
+  @media (min-width:$tablet-width) {
+    padding-left: 70px;
+    padding-right: 65px;
+  }
 }
 
-.program-form fieldset {
+.form fieldset {
   margin: 0px;
   padding: 0 20px;
   border: none;
+
+  @media (min-width:$tablet-width) {
+    padding: 0;
+  }
 }
 
-.program-form__wrapper {
+.form__wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-.program-form .program-form__target {
+.form .form__target {
   padding-top: 25px;
   margin: 10px 0 30px 0;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
+
+  @media (min-width:$tablet-width) {
+    padding-left: 25px;
+
+    border: 1px solid #ededed;
+  }
 }
 
-.program-form__target .program-form__wrapper,
-.program-form__plus .program-form__wrapper {
+.form__wrapper--target,
+.form__wrapper--plus {
   margin-bottom: 25px;
 }
 
-.program-form label {
+.form__wrapper--plus {
+  @media (min-width:$tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+
+.form label {
   padding-right: 15px;
 
   color: $color-dark-black;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+  }
 }
 
-.program-form input {
+.form input[type="text"] {
   padding: 12px 4px 12px 14px;
   flex-grow: 1;
 
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   color: $font-color-grey;
   font-size: 16px;
   font-weight: 400;
@@ -51,15 +76,19 @@
 
   background-color: transparent;
   border: 1px solid #cdcdcd;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+  }
 }
 
-.program-form__target label,
-.program-form__plus label {
+.form__target label,
+.form__plus label {
   position: relative;
   padding-left: 45px;
 }
 
-.program-form__target input + label::before {
+.form__target input + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -72,7 +101,7 @@
   border-radius: 50%;
 }
 
-.program-form__target input:checked + label::after {
+.form__target input:checked + label::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -81,15 +110,15 @@
   width: 14px;
   height: 14px;
 
-  background-color: #68b738;;
+  background-color: $background-green;
   border-radius: 50%;
 }
 
-.program-form .program-form__contacts {
+.form .form__contacts {
   margin-bottom: 15px;
 }
 
-.program-form__plus input + label::before {
+.form__plus input + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -101,7 +130,7 @@
   border: 1px solid #cdcdcd;
 }
 
-.program-form__plus input:checked + label::after {
+.form__plus input:checked + label::after {
   content: "";
   position: absolute;
 
@@ -116,14 +145,28 @@
   border: none;
 }
 
-.program-form legend {
+.form__plus__wrapper {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__plus__wrapper .form__wrapper {
+  @media (min-width:$tablet-width) {
+    width: 225px;
+    margin-right: 10%;
+  }
+}
+
+.form legend {
   position: relative;
 
   display: inline-block;
   padding: 0 20px 0 0;
   margin-bottom: 35px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   color: $font-color-black;
   font-size: 24px;
   font-weight: 400;
@@ -137,15 +180,19 @@
     top: 14px;
 
     display: block;
-    width: 100vw;
+
     height: 3px;
 
-    background-color: #68b738;
+    background-color: $background-green;
     z-index: -1;
+  }
+
+  @media (min-width:$tablet-width) {
+    font-size: 36px;
   }
 }
 
-.program-form textarea {
+.form textarea {
   box-sizing: border-box;
   width: 100%;
   min-height: 150px;
@@ -156,7 +203,7 @@
   background-color: transparent;
   border: 1px solid #cdcdcd;
 
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   color: $font-color-grey;
   font-size: 16px;
   font-weight: 400;
@@ -164,17 +211,44 @@
   text-transform: uppercase;
 }
 
-.program-form__note {
+.form__note {
   text-align: center;
 }
 
 .form-intro {
   margin: 25px 20px 40px 20px;
-  font-family: "Oswald", sans-serif;
+
+  font-family: $oswald;
   color: $font-color-black;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    margin-left: 70px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
+.form__submit {
+  display: block;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  @media (min-width:$tablet-width) {
+    margin-left: 0;
+    margin-right: 60px;
+  }
+}
+
+.form__submit__wrapper {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}

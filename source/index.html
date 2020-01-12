@@ -9,20 +9,19 @@
 
     <header class="header">
       <a class="header__logo">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="190" height="38" alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo__image" src="img/logo-mobile.svg" width="191" height="39"
+            alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+        </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list main-menu-list">
-          <li class="main-menu-list__item site-list__item-active">
-            <a>Главная</a>
-          </li>
-          <li class="main-menu-list__item">
-            <a href="">Каталог продукции</a>
-          </li>
-          <li class="main-menu-list__item">
-            <a href="">Подбор программы</a>
-          </li>
+        <ul class="main-menu-list">
+          <li class="main-menu-list__item main-menu-list__item-active"><a>Главная</a></li>
+          <li class="main-menu-list__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="main-menu-list__item"><a href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
@@ -33,23 +32,23 @@
           <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
         </div>
-        <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Корм Курица 500 грамм">
+        <img class="promo__image" src="img/index-can-mobile@1x.png" alt="Корм Курица 500 грамм">
         <a class="promo__button button" href="form.html">Подобрать программу</a>
       </section>
-      <section class="catalog-type">
+      <section class="catalog-type container">
         <h2 class="visually-hidden">Каталог</h2>
-        <div class="catalog-type__block catalog-slim">
-          <h3 class="catalog-type__block--header">Похудение</h3>
-          <p class="catalog-type__block--intro">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <div class="catalog-type__block">
+          <h3 class="catalog-type__header catalog-type__header--slim">Похудение</h3>
+          <p class="catalog-type__intro">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="catalog-type__link" href="catalog.html">Каталог slim</a>
         </div>
-        <div class="catalog-type__block catalog-pro">
-          <h3 class="catalog-type__block--header">Набор массы</h3>
-          <p class="catalog-type__block--intro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <div class="catalog-type__block">
+          <h3 class="catalog-type__header catalog-type__header--pro">Набор массы</h3>
+          <p class="catalog-type__intro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="catalog-type__link" href="catalog.html">Каталог pro</a>
         </div>
       </section>
-      <section class="principles">
+      <section class="principles container">
         <h2 class="principles__header">Как это работает</h2>
         <ul class="principles__list">
           <li class="principles__item principles__item--healthy">
@@ -66,70 +65,72 @@
           </li>
         </ul>
       </section>
-      <section class="example">
-        <div class="example__block-wrapper">
-          <h2 class="example__header">Живой пример</h2>
-          <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <section class="example container">
+        <h2 class="example__header">Живой пример</h2>
+        <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__wrapper-tablet">
           <div class="example__wrapper">
-            <div class="example__block">
-              <span class="example__block__title">5 кг</span>
-              <span class="example__block__description">снижение веса</span>
-            </div>
-            <div class="example__block">
-              <span class="example__block__title">60 дней</span>
-              <span class="example__block__description">затрачено времени</span>
-            </div>
+            <dl class="example__block">
+              <dt class="example__block__title">5 кг</dt>
+              <dd class="example__block__description">снижение веса</dd>
+            </dl>
+            <dl class="example__block">
+              <dt class="example__block__title">60 дней</dt>
+              <dd class="example__block__description">затрачено времени</dd>
+            </dl>
           </div>
           <p class="example__block__costs">Затраты на питание: <span class="example__block__sum">15 000 руб.</span></p>
-          <div class="before-after">
-            <img class="before-after__image before-after__image--active" src="img/before-mobile@1x.png" width="311" height="232" alt="Фото кота было">
-            <img class="before-after__image" src="img/after-mobile@1x.png" width="311" height="232" alt="Фото кота стало">
-						<div class="example__stripe">
-              <a class="example__stripe-link" href="">Было</a>
-              <div class="example__slider">
-                <div class="example__slider-in"></div>
-              </div>
-              <a class="example__stripe-link" href="">Стало</a>
+        </div>
+        <div class="before-after">
+          <img class="before-after__image before-after__image--active" src="img/before-mobile@1x.png" width="311" height="232" alt="Фото кота было">
+          <img class="before-after__image" src="img/after-mobile@1x.png" width="311" height="232" alt="Фото кота стало">
+				  <div class="example__stripe">
+            <a class="example__stripe-link" href="">Было</a>
+            <div class="example__slider">
+              <div class="example__slider-in"></div>
             </div>
+            <a class="example__stripe-link" href="">Стало</a>
           </div>
         </div>
       </section>
-      <section class="adress">
-        <div class="adress__wrapper">
-          <p class="adress__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="asress__description">ул. Большая Конюшенная, д. 19/8<br/>Санкт-Петербург</p>
+      <section class="address">
+        <div class="address__wrapper container">
+          <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
-        <div class="adress--map">
-            <img class="adress--img" src="img/map.jpg" width="320" height="365" alt="Заглушка карты">
+        <div class="address__map">
+            <img class="address__img" src="img/map.jpg" width="320" height="365" alt="Заглушка карты">
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <img class="footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
-      <div class="footer__social social">
+    <footer class="footer container">
+      <a class="footer__logo">
+        <img class="footer__logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+      </a>
+      <div class="footer__social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://vk.com">
-              <img class="social__image-vk" src="img/icon-vk.svg" width="22" height="12" alt="Мы в Контакте">
+              <img class="social__image social__image--vk" src="img/icon-vk.svg" width="22" height="12" alt="Мы в Контакте">
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://www.instagram.com">
-              <img class="social__image-insta" src="img/icon-insta.svg" width="17" height="17" alt="Мы в Инстаграме">
+              <img class="social__image social__image--insta" src="img/icon-insta.svg" width="17" height="17" alt="Мы в Инстаграме">
             </a>
           </li>
 
           <li class="social__item">
             <a class="social__link" href="https://facebook.com">
-              <img class="social__image-fb" src="img/icon-fb.svg" width="10" height="19" alt="Мы в Фейсбуке">
+              <img class="social__image social__image--fb" src="img/icon-fb.svg" width="10" height="19" alt="Мы в Фейсбуке">
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="footer__copyright">
+        <a class="footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="footer__copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
             <path
               d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
