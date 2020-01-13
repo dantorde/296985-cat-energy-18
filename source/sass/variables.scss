@@ -1,0 +1,24 @@
+$font-color-grey: #444444;
+$font-color-white: #ffffff;
+$font-color-black: #111111;
+$color-dark-black:#222222;
+$color-white: #ffffff;
+$color-promo-green: #65a93c;
+$color-button-green: #68b738;
+$border-green: #68b738;
+$border-light-gray: #e6e6e6;
+$border-dark-gray: #dadada;
+$light-gray: #e6e6e6;
+$background-gray: #f2f2f2;
+$background-green: #68b738;
+
+$oswald: "Oswald", "Arial", sans-serif;
+$tablet-width: 768px;
+$desktop-width: 1300px;
+
+%list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

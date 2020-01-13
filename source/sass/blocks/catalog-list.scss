@@ -1,0 +1,176 @@
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0 0 0;
+  padding: 0;
+
+
+  list-style: none;
+
+  &--plus {
+    @media (min-width:$tablet-width) {
+      flex-direction: column;
+    }
+  }
+}
+
+.catalog-item {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 25px;
+  padding: 0 20px;
+
+  border-top: solid 1px #ededed;
+
+  &:last-child {
+    padding-bottom: 25px;
+    border-bottom: solid 1px #ededed;
+  }
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-height: 430px;
+    width: auto;
+    margin-bottom: 90px;
+    padding: 0 35px;
+
+    border: none;
+    background-color: $background-gray;
+  }
+
+  &--load {
+    @media (min-width:$tablet-width) {
+      background-color: #fff;
+      outline: 1px solid $border-light-gray;
+    }
+  }
+}
+
+.catalog-item__image {
+  @media (min-width:$tablet-width) {
+    width: 100%;
+    margin: auto;
+    margin-top: -80px;
+  }
+
+  &--load {
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    opacity: 0.2;
+
+    @media (min-width:$tablet-width) {
+      width: 60px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+    }
+  }
+}
+
+.catalog-item__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: auto;
+
+  @media (min-width:$tablet-width) {
+    flex-direction: column;
+  }
+
+  &--load {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.catalog-item__button-buy {
+  display: block;
+  width: 280px;
+  margin: auto;
+
+  font-size: 16px;
+
+  @media (min-width:$tablet-width) {
+    width: 250px;
+  }
+
+  &--plus {
+    @media (min-width:$tablet-width) {
+      width: 100%;
+    }
+  }
+
+  &--load {
+    color: $font-color-grey;
+    background-color: $background-gray;
+  }
+}
+
+.catalog-item__info {
+  margin-top: 20px;
+
+  &--load {
+    margin-top: 0;
+
+    color: $font-color-grey;
+  }
+}
+
+.catalog-item__title {
+  margin-bottom: 10px;
+
+  font-family: $oswald;
+  color: $font-color-black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    width: 150px;
+    margin: auto;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+
+.catalog-item__table {
+  width: 100%;
+
+  color: $font-color-grey;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+
+  border-spacing:0;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 30px;
+
+    font-size: 16px;
+  }
+}
+
+.catalog-item__table td {
+  text-align: right;
+}
+
+.catalog-item__table th {
+  font-weight: 400;
+}
+
+.catalog-item__table tr {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
