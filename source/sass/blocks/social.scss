@@ -9,6 +9,17 @@
   list-style: none;
 }
 
+.social__link {
+  &:hover,
+  &:focus {
+    fill: $background-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .social__image--vk {
   @media (min-width:$tablet-width) {
     width: 30px;

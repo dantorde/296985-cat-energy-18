@@ -12,6 +12,15 @@
   background-color: $color-button-green;
   border: none;
   cursor: pointer;
+    
+    &:hover,
+    &:focus {
+    background-color: #5eaa2f;
+    }
+
+    &:active {
+    color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 
