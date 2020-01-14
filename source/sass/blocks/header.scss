@@ -9,6 +9,7 @@
   @media (min-width:$tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 40px;
 
     border-bottom: none;
   }
@@ -23,7 +24,7 @@
     margin: 0 95px 0 20px;
     padding: 25px 0 14px;
   }
-  
+
   &:hover,
   &:focus {
     opacity: 0.8;
@@ -31,5 +32,11 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+.header__logo__image {
+  @media (min-width:$tablet-width) {
+    width: 173px;
   }
 }
