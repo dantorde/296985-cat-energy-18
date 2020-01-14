@@ -23,4 +23,13 @@
     margin: 0 95px 0 20px;
     padding: 25px 0 14px;
   }
+  
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

@@ -11,7 +11,7 @@
   }
 }
 
-.catalog-plus-item {
+.catalog-plus__item {
   width: 100%;
   margin: auto;
   padding: 10px 0 19px 0;
@@ -33,7 +33,7 @@
   }
 }
 
-.catalog-plus-item__wrapper {
+.catalog-plus__item__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +49,7 @@
   }
 }
 
-.catalog-plus-item__button-buy {
+.catalog-plus__item__button-buy {
   display: block;
   width: 280px;
   margin: auto;
@@ -62,11 +62,11 @@
   }
 }
 
-.catalog-plus-item__info {
+.catalog-plus__item__info {
   margin-top: 20px;
 }
 
-.catalog-plus-item__title {
+.catalog-plus__item__title {
   margin-bottom: 10px;
 
   font-family: $oswald;
@@ -84,7 +84,7 @@
   }
 }
 
-.catalog-plus-item__table {
+.catalog-plus__item__table {
   width: 100%;
 
   color: $font-color-grey;
@@ -101,12 +101,12 @@
   }
 }
 
-.catalog-plus-item__table td {
+.catalog-plus__item__table td {
   text-align: right;
 }
 
 
-.catalog-plus-item__table td {
+.catalog-plus__item__table td {
   font-size: 14px;
 
   @media (min-width:$tablet-width) {
@@ -115,15 +115,15 @@
   }
 }
 
-.catalog-plus-item__table td:first-child {
+.catalog-plus__item__table td:first-child {
   text-align: left;
 }
 
-.catalog-plus-item__table th {
+.catalog-plus__item__table th {
   font-weight: 400;
 }
 
-.catalog-plus-item__table tr {
+.catalog-plus__item__table tr {
   @media (min-width:$tablet-width) {
     display: flex;
   }
