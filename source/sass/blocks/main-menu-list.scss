@@ -16,6 +16,10 @@
     width: 100%;
     margin: 0;
   }
+
+  @media (min-width:$desktop-width) {
+    margin-right: 40px;
+  }
 }
 
 .main-menu-list__item {
@@ -42,6 +46,12 @@
       color: $color-dark-black;
       border-top: none;
     }
+
+    @media (min-width:$desktop-width) {
+      font-size: 20px;
+      color: $font-color-white;
+    }
+
   }
   a:hover,
   a:focus {
@@ -56,5 +66,9 @@
 .main-menu-list__item-active a{
   @media (min-width:$tablet-width) {
     border-bottom: 2px solid $border-green;
+  }
+
+  @media (min-width:$desktop-width) {
+    border-bottom: 2px solid #fff;
   }
 }

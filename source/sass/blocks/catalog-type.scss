@@ -4,7 +4,7 @@
   @media (min-width:$tablet-width) {
     margin-top: 10px;
   }
-    
+
   @media (min-width:$desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -22,11 +22,11 @@
     padding: 80px 20px 60px 50px;
     margin-bottom: 30px;
   }
-  
+
   @media (min-width:$desktop-width) {
     width: 39%;
-    
-    padding: 75px 50px 20px;
+
+    padding: 75px 50px 60px;
   }
 }
 
@@ -54,7 +54,7 @@
 
     border-radius: 50%;
     background-color: $background-green;
-    
+
     @media (min-width:$tablet-width) {
       right: 60px;
       left: inherit;
@@ -62,10 +62,11 @@
       width: 200px;
       height: 201px;
     }
-    
+
     @media (min-width:$desktop-width) {
+      top: -30px;
       left: 0;
-      
+
       width: 100px;
       height: 100px;
     }
@@ -92,9 +93,10 @@
       z-index: 1;
     }
   }
-    
+
   @media (min-width:$desktop-width) {
     padding-left: 165px;
+    margin-bottom: 75px;
   }
 }
 
@@ -114,10 +116,10 @@
     width: 140px;
     height: 194px;
   }
-  
+
   @media (min-width:$desktop-width) {
-    top: -5px;
-    left: 5px;
+    top: -35px;
+    left: 15px;
 
     width: 71px;
     height: 97px;
@@ -139,13 +141,13 @@
     width: 268px;
     height: 112px;
   }
-  
+
   @media (min-width:$desktop-width) {
-    top: 5px;
-    left: 5px;
+    top: -10px;
+    left: -23px;
 
     width: 134px;
-    height: 57px;
+    height: 56px;
   }
 }
 
@@ -166,7 +168,7 @@
 
     border-bottom: none;
   }
-  
+
   @media (min-width:$desktop-width) {
     padding-right: 0;
   }
@@ -182,6 +184,10 @@
   text-transform: uppercase;
   color: $font-color-black;
 
+  @media (min-width:$desktop-width) {
+    font-size: 20px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -193,5 +199,9 @@
     height: 12px;
 
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
+
+    @media (min-width:$desktop-width) {
+      top: 10px;
+  }
   }
 }
