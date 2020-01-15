@@ -20,6 +20,10 @@ body {
   @media (min-width:$tablet-width) {
     max-width: 1000px;
   }
+
+  @media (min-width:$desktop-width) {
+    max-width: 2000px;
+  }
 }
 
 a {

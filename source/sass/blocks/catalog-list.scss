@@ -25,6 +25,10 @@
   &:last-child {
     padding-bottom: 25px;
     border-bottom: solid 1px #ededed;
+    
+    @media (min-width:$tablet-width) {
+      padding-bottom: 0;
+    }
   }
 
   @media (min-width:$tablet-width) {
@@ -33,14 +37,22 @@
     min-height: 430px;
     width: 325px;
     margin-top: 140px;
-    padding: 0 35px;
+    padding: 0 0;
 
     border: none;
     background-color: $background-gray;
   }
+  
+  @media (min-width:$tablet-width) {
+    width: 245px;
+  }
 
   &--load {
     @media (min-width:$tablet-width) {
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      
       background-color: #fff;
       outline: 1px solid $border-light-gray;
     }
@@ -76,6 +88,8 @@
 
   @media (min-width:$tablet-width) {
     flex-direction: column;
+    max-width: 324px;
+    margin-bottom: 20px;
   }
 
   &--load {
@@ -90,6 +104,8 @@
   display: block;
   width: 280px;
   margin: auto;
+  margin-bottom: 40px;
+  margin-top: 0;
 
   font-size: 16px;
 
@@ -106,6 +122,11 @@
   &--load {
     color: $font-color-grey;
     background-color: $background-gray;
+    
+    @media (min-width:$tablet-width) {
+      margin-bottom: 40px;
+      margin-top: auto;
+    }
   }
 }
 
@@ -116,6 +137,11 @@
     margin-top: 0;
 
     color: $font-color-grey;
+  }
+  
+  @media (min-width:$tablet-width) {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 
@@ -132,6 +158,7 @@
   @media (min-width:$tablet-width) {
     width: 150px;
     margin: auto;
+    margin-bottom: 25px;
 
     font-size: 20px;
     line-height: 20px;
@@ -150,8 +177,6 @@
   border-spacing:0;
 
   @media (min-width:$tablet-width) {
-    margin-bottom: 30px;
-
     font-size: 16px;
   }
 }

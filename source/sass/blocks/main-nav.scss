@@ -5,6 +5,10 @@
     flex-grow: 1;
     margin: 0;
   }
+
+  @media (min-width:$desktop-width) {
+    padding-left: 100px;
+  }
 }
 
 .main-nav__toggle {

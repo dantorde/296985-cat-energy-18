@@ -116,6 +116,11 @@
 
 .form .form__contacts {
   margin-bottom: 15px;
+  
+  @media (min-width:$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form__plus input + label::before {
@@ -213,6 +218,10 @@
 
 .form__note {
   text-align: center;
+  
+  @media (min-width:$tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .form-intro {
@@ -244,11 +253,29 @@
     margin-left: 0;
     margin-right: 60px;
   }
+  
+  @media (min-width:$desktop-width) {
+    width: 570px;
+  }
 }
 
 .form__submit__wrapper {
   @media (min-width:$tablet-width) {
     display: flex;
     align-items: center;
+  }
+}
+
+.form__wrapper-top {
+  @media (min-width:$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__info,
+.form__target {
+  @media (min-width:$desktop-width) {
+    width: 47%;
   }
 }

@@ -21,8 +21,14 @@
   padding: 10px 20px;
 
   @media (min-width:$tablet-width) {
-    margin: 0 95px 0 20px;
+    margin: 0 95px 0 30px;
     padding: 25px 0 14px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 50%;
+    margin-right: 0;
+    padding-top: 54px;
   }
 
   &:hover,
@@ -38,5 +44,9 @@
 .header__logo__image {
   @media (min-width:$tablet-width) {
     width: 173px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 202px;
   }
 }

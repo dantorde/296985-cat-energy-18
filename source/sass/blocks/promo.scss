@@ -7,6 +7,14 @@
 
     background: url("../img/index-can-tablet@1x.jpg") no-repeat 50px 250px;
   }
+
+  @media (min-width:$desktop-width) {
+    min-height: 500px;
+    margin-bottom: 135px;
+
+    background: url("../img/index-can-desktop@1x.png") no-repeat 490px 0;
+
+  }
 }
 
 .promo__cat {

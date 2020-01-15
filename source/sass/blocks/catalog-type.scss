@@ -4,6 +4,11 @@
   @media (min-width:$tablet-width) {
     margin-top: 10px;
   }
+
+  @media (min-width:$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .catalog-type__block {
@@ -16,6 +21,12 @@
   @media (min-width:$tablet-width) {
     padding: 80px 20px 60px 50px;
     margin-bottom: 30px;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 39%;
+
+    padding: 75px 50px 60px;
   }
 }
 
@@ -43,6 +54,22 @@
 
     border-radius: 50%;
     background-color: $background-green;
+
+    @media (min-width:$tablet-width) {
+      right: 60px;
+      left: inherit;
+
+      width: 200px;
+      height: 201px;
+    }
+
+    @media (min-width:$desktop-width) {
+      top: -30px;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
+    }
   }
 
   &::before {
@@ -58,20 +85,6 @@
     font-size: 36px;
     line-height: 37.02px;
 
-    &::after {
-      position: absolute;
-      content: "";
-      top: -5px;
-      right: 60px;
-      left: inherit;
-
-      display: block;
-      width: 200px;
-      height: 201px;
-
-      border-radius: 50%;
-      background-color: $background-green;
-    }
 
     &::before {
       position: absolute;
@@ -80,22 +93,36 @@
       z-index: 1;
     }
   }
+
+  @media (min-width:$desktop-width) {
+    padding-left: 165px;
+    margin-bottom: 75px;
+  }
 }
 
 .catalog-type__header--slim::before {
   left: 8px;
   top: -5px;
   background-image: url("../img/icon-cat-slim.svg");
+  background-repeat:no-repeat;
   width: 35px;
   height: 49px;
 
   @media (min-width:$tablet-width) {
-    top: - 5px;
+    top: -5px;
     right: 77px;
     left: inherit;
 
     width: 140px;
     height: 194px;
+  }
+
+  @media (min-width:$desktop-width) {
+    top: -35px;
+    left: 15px;
+
+    width: 71px;
+    height: 97px;
   }
 }
 
@@ -113,6 +140,14 @@
 
     width: 268px;
     height: 112px;
+  }
+
+  @media (min-width:$desktop-width) {
+    top: -10px;
+    left: -23px;
+
+    width: 134px;
+    height: 56px;
   }
 }
 
@@ -133,6 +168,10 @@
 
     border-bottom: none;
   }
+
+  @media (min-width:$desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .catalog-type__link {
@@ -145,6 +184,10 @@
   text-transform: uppercase;
   color: $font-color-black;
 
+  @media (min-width:$desktop-width) {
+    font-size: 20px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -156,5 +199,9 @@
     height: 12px;
 
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
+
+    @media (min-width:$desktop-width) {
+      top: 10px;
+  }
   }
 }
