@@ -5,7 +5,7 @@
 
   @media (min-width:$tablet-width) {
     margin-bottom: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     border-bottom: 1px solid $border-light-gray;
   }
 
@@ -19,6 +19,7 @@
 
 .principles__header {
   margin-bottom: 30px;
+  margin-top: 0;
 
   font-family: $oswald;
   font-size: 36px;
@@ -27,7 +28,7 @@
   color: $font-color-black;
 
   @media (min-width:$tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 
     font-size: 60px;
     line-height: 60px;
@@ -80,7 +81,7 @@
     width: 230px;
     min-height: 230px;
     padding: 110px 0 0 0;
-    margin-right: 20%;
+    margin-right: 21%;
 
     font-size: 16px;
     line-height: 24px;
@@ -118,11 +119,11 @@
 .principles__item--healthy::after {
   position: absolute;
   content: "";
-  left: -73px;
-  top: 2px;
+  left: -80px;
+  top: 0;
 
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 
   background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
@@ -139,11 +140,11 @@
 .principles__item--easy::after {
   position: absolute;
   content: "";
-  left: -73px;
-  top: 2px;
+  left: -80px;
+  top: 0;
 
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 
   background-image: url("../img/advantage-powder@1x.png");
   background-repeat: no-repeat;
@@ -159,11 +160,11 @@
 .principles__item--simply::after {
   position: absolute;
   content: "";
-  left: -73px;
-  top: 2px;
+  left: -80px;
+  top: 0;
 
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 
   background-image: url("../img/advantage-dining@1x.png");
   background-repeat: no-repeat;
@@ -179,11 +180,11 @@
 .principles__item--quickly::after {
   position: absolute;
   content: "";
-  left: -73px;
-  top: 2px;
+  left: -80px;
+  top: 0;
 
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 
   background-image: url("../img/advantage-clock@1x.png");
   background-repeat: no-repeat;
