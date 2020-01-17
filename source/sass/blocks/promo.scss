@@ -2,10 +2,10 @@
   position: relative;
 
   @media (min-width:$tablet-width) {
-    min-height: 850px;
+    min-height: 805px;
     padding-left: 120px;
 
-    background: url("../img/index-can-tablet@1x.jpg") no-repeat 50px 250px;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat 30px 200px;
   }
 
   @media (min-width:$desktop-width) {
@@ -31,15 +31,18 @@
   @media (min-width:$tablet-width) {
     min-height: 100px;
     margin-bottom: 50px;
+    margin-left: -30px;
 
     background: none;
     color: $font-color-black;
   }
 }
 
+
 .promo__title {
   padding-top: 26px;
-  
+  margin-top: 0;
+
   font-family: $oswald;
   color: $font-color-white;
   font-size: 36px;
@@ -49,6 +52,8 @@
   @media (min-width:$tablet-width) {
     width: 450px;
     padding-right: 200px;
+    padding-top: 0;
+    margin-bottom: 45px;
 
     color: $font-color-black;
     font-size: 60px;
@@ -64,8 +69,6 @@
   text-transform: uppercase;
 
   @media (min-width:$tablet-width) {
-    margin-top: 30px;
-
     font-size: 20px;
     line-height: 20px;
     text-align: left;

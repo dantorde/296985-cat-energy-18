@@ -24,6 +24,7 @@
   width: 124px;
   padding-top: 15px;
   padding-bottom: 15px;
+  margin-top: 0;
 
   text-align: center;
 
@@ -33,13 +34,14 @@
   @media (min-width:$tablet-width) {
     width: 165px;
     margin-right: 40px;
+    padding-bottom: 25px;
     padding-top: 22px;
   }
 }
 
 .example__header {
   margin-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 20px;
 
   font-family: $oswald;
   font-size: 36px;
@@ -48,6 +50,8 @@
   line-height: 60px;
 
   @media (min-width:$tablet-width) {
+    margin-top: 45px;
+    padding-top: 0;
     font-size: 60px;
     line-height: 60px;
   }
@@ -102,16 +106,16 @@
 
     font-size: 14px;
 
-    background-color: #fff;
+    background-color: $color-white;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width:$desktop-width) {
     background-color: $background-gray;
   }
 }
 
 .example__block__costs {
-  margin: 30px 0 35px 0;
+  margin: 25px 0 35px 0;
 
   font-family: $oswald;
   font-size: 14px;
@@ -123,12 +127,15 @@
 
   @media (min-width:$tablet-width) {
     max-width: 200px;
+    margin-bottom: 0;
+    margin-top: 8px;
 
     font-size: 20px;
+    line-height: 30px;
     text-align: right;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width:$desktop-width) {
     max-width: inherit;
 
     text-align: left;
@@ -168,6 +175,7 @@
   width: 200px;
   margin: auto;
   margin-bottom: 15px;
+  margin-top: 35px;
   padding-bottom: 35px;
 }
 
@@ -204,7 +212,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   @media (min-width:$tablet-width) {
     flex-direction: row;
   }
