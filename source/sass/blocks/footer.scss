@@ -1,9 +1,14 @@
 .footer {
-  display: flex;
-  flex-direction: column;
   padding-top: 40px;
   background-color: $background-gray;
+}
 
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: auto;
+  
   @media (min-width:$tablet-width) {
     flex-direction: row;
     justify-content: space-between;

@@ -11,6 +11,11 @@
   }
 }
 
+.example__container {
+  max-width: 450px;
+  margin: auto;
+}
+
 .example__block {
   position: relative;
 
@@ -34,6 +39,7 @@
 
 .example__header {
   margin-bottom: 20px;
+  padding-top: 30px;
 
   font-family: $oswald;
   font-size: 36px;
@@ -63,7 +69,7 @@
 .example__wrapper {
   display: flex;
   justify-content: space-between;
-  max-width: 320px;
+  width: 100%;
   margin: auto;
 
   @media (min-width:$tablet-width) {
@@ -196,7 +202,12 @@
 
 .example__wrapper-tablet {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  
+  @media (min-width:$tablet-width) {
+    flex-direction: row;
+  }
 
   @media (min-width:$desktop-width) {
     flex-direction: column;
