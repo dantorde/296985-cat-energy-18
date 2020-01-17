@@ -26,42 +26,44 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="main__title container">Подбор программы</h1>
+      <h1 class="title__h1 container">Подбор программы</h1>
       <p class="form-intro">Заполните анкету и мы подберем<br/>программу питания для вашего кота</p>
       <form class="form" action="/echo" method="post">
-        <fieldset class="form__info">
-          <div class="form__wrapper">
-            <label for="name">Имя:*</label>
-            <input type="text" name="fullname" id="name" placeholder="Барсик">
-          </div>
+        <div class="form__wrapper-top">
+          <fieldset class="form__info">
+            <div class="form__wrapper">
+              <label for="name">Имя:*</label>
+              <input type="text" name="fullname" id="name" placeholder="Барсик">
+            </div>
 
-          <div class="form__wrapper">
-            <label for="weight">Вес (кг):*</label>
-            <input type="text" name="weight" id="weight" placeholder="7">
-          </div>
+            <div class="form__wrapper">
+              <label for="weight">Вес (кг):*</label>
+              <input type="text" name="weight" id="weight" placeholder="7">
+            </div>
 
-          <div class="form__wrapper">
-            <label for="age">Возраст (лет):</label>
-            <input type="text" name="age" id="age" placeholder="7">
-          </div>
-        </fieldset>
+            <div class="form__wrapper">
+              <label for="age">Возраст (лет):</label>
+              <input type="text" name="age" id="age" placeholder="7">
+            </div>
+          </fieldset>
 
-        <fieldset class="form__target">
-          <div class="form__wrapper form__wrapper--target">
-            <input class="visually-hidden" type="radio" name="supply" id="slim" value="Похудение">
-            <label for="slim">Похудение</label>
-          </div>
+          <fieldset class="form__target">
+            <div class="form__wrapper form__wrapper--target">
+              <input class="visually-hidden" type="radio" name="supply" id="slim" value="Похудение">
+              <label for="slim">Похудение</label>
+            </div>
 
-          <div class="form__wrapper form__wrapper--target">
-            <input class="visually-hidden" type="radio" name="supply" id="pro" value="Набор массы">
-            <label for="pro">Набор массы</label>
-          </div>
+            <div class="form__wrapper form__wrapper--target">
+              <input class="visually-hidden" type="radio" name="supply" id="pro" value="Набор массы">
+              <label for="pro">Набор массы</label>
+            </div>
 
-          <div class="form__wrapper form__wrapper--target">
-            <input class="visually-hidden" type="radio" name="supply" id="unknown" value="Не знаю (Нужен ваш совет)">
-            <label for="unknown">Не знаю (Нужен ваш совет)</label>
-          </div>
-        </fieldset>
+            <div class="form__wrapper form__wrapper--target">
+              <input class="visually-hidden" type="radio" name="supply" id="unknown" value="Не знаю (Нужен ваш совет)">
+              <label for="unknown">Не знаю (Нужен ваш совет)</label>
+            </div>
+          </fieldset>
+        </div>
 
         <fieldset class="form__contacts">
           <legend>Контактные данные (владельца кота)</legend>

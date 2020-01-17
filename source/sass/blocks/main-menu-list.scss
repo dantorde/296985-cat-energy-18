@@ -16,6 +16,10 @@
     width: 100%;
     margin: 0;
   }
+
+  @media (min-width:$desktop-width) {
+    margin-right: 40px;
+  }
 }
 
 .main-menu-list__item {
@@ -42,6 +46,11 @@
       color: $color-dark-black;
       border-top: none;
     }
+
+    @media (min-width:$desktop-width) {
+      font-size: 20px;
+    }
+
   }
   a:hover,
   a:focus {
@@ -51,10 +60,24 @@
   a:active {
     opacity: 0.3;
   }
+  
+  &--index a {
+    @media (min-width:$desktop-width) {
+      color: $font-color-white;
+    }
+  }
 }
 
-.main-menu-list__item-active a{
-  @media (min-width:$tablet-width) {
-    border-bottom: 2px solid $border-green;
+.main-menu-list__item-active {
+  a {
+    @media (min-width:$tablet-width) {
+      border-bottom: 2px solid $border-green;
+    }
+  }
+  
+  &--index a {
+    @media (min-width:$desktop-width) {
+      border-bottom: 2px solid #fff;
+    }
   }
 }
