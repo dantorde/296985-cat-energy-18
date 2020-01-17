@@ -3,6 +3,7 @@
 
   @media (min-width:$tablet-width) {
     margin-top: 10px;
+    margin-bottom: 45px;
   }
 
   @media (min-width:$desktop-width) {
@@ -19,10 +20,9 @@
   background-color: $background-gray;
 
   @media (min-width:$tablet-width) {
-    padding: 80px 20px 60px 50px;
+    padding: 70px 20px 60px 50px;
     margin-bottom: 30px;
   }
-
   @media (min-width:$desktop-width) {
     width: 39%;
 
@@ -56,7 +56,8 @@
     background-color: $background-green;
 
     @media (min-width:$tablet-width) {
-      right: 60px;
+      top: 10px;
+      right: 40px;
       left: inherit;
 
       width: 200px;
@@ -81,6 +82,7 @@
 
   @media (min-width:$tablet-width) {
     padding-left: 0;
+    margin-bottom: 25px;
 
     font-size: 36px;
     line-height: 37.02px;
@@ -109,7 +111,7 @@
   height: 49px;
 
   @media (min-width:$tablet-width) {
-    top: -5px;
+    top: 5px;
     right: 77px;
     left: inherit;
 
@@ -134,8 +136,8 @@
   height: 28px;
 
   @media (min-width:$tablet-width) {
-    top: 40px;
-    right: 25px;
+    top: 60px;
+    right: 5px;
     left: inherit;
 
     width: 268px;
@@ -162,6 +164,7 @@
 
   @media (min-width:$tablet-width) {
     padding-right: 300px;
+    margin-bottom: 35px;
 
     font-size: 16px;
     line-height: 24px;
@@ -184,7 +187,7 @@
   text-transform: uppercase;
   color: $font-color-black;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width:$tablet-width) {
     font-size: 20px;
   }
 
@@ -201,7 +204,8 @@
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
 
     @media (min-width:$desktop-width) {
-      top: 10px;
+      top: 8px;
+      right: -50px;
   }
   }
 }
