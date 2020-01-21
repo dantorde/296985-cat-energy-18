@@ -6,17 +6,17 @@
 
   list-style: none;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: column;
   }
-  
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     flex-grow: 1;
   }
 }
 
 .catalog-plus__container {
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -31,23 +31,22 @@
   background: none;
 
   &:last-child {
-    padding-bottom: 25px;
     border-bottom: 1px solid #cdcdcd;
-    
-    @media (min-width:$desktop-width) {
+
+    @media (min-width: $desktop-width) {
       padding-bottom: 0;
     }
   }
 
-  cccc {
+  @media (min-width: $tablet-width) {
     box-sizing: border-box;
     margin-top: -1px;
     padding: 30px 30px;
 
     border: 1px solid #cdcdcd;
   }
-  
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     display: flex;
     padding: 5px 0 0 0;
   }
@@ -61,14 +60,14 @@
   margin: auto;
   margin-bottom: 15px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: flex-end;
     max-width: 700px;
     margin-bottom: 25px;
   }
-  
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     margin-left: 0;
   }
 }
@@ -80,12 +79,12 @@
 
   font-size: 16px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 100%;
     max-width: 700px;
   }
-  
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     width: 245px;
     margin-right: 0;
   }
@@ -97,6 +96,7 @@
 
 .catalog-plus__item__title {
   margin-bottom: 10px;
+  margin-top: 0;
 
   font-family: $oswald;
   color: $font-color-black;
@@ -105,14 +105,14 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
 
     font-size: 20px;
     line-height: 20px;
   }
-  
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     width: 300px;
   }
 }
@@ -125,9 +125,9 @@
   font-weight: 400;
   line-height: 14px;
 
-  border-spacing:0;
+  border-spacing: 0;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: auto;
 
     font-size: 16px;
@@ -136,13 +136,9 @@
 
 .catalog-plus__item__table td {
   text-align: right;
-}
-
-
-.catalog-plus__item__table td {
   font-size: 14px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-left: 50px;
     font-size: 16px;
   }
@@ -157,19 +153,24 @@
 }
 
 .catalog-plus__item__table tr {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
-  
-  @media (min-width:$desktop-width) {
+
+  @media (min-width: $desktop-width) {
     width: 320px;
     justify-content: space-between;
   }
 }
 
 .catalog-plus__title {
-  @media (min-width:$desktop-width) {
+  font-family: $oswald;
+  color: $font-color-black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
     width: 100%;
   }
 }
-

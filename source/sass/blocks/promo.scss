@@ -1,19 +1,18 @@
 .promo {
   position: relative;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 805px;
     padding-left: 120px;
 
     background: url("../img/index-can-tablet@1x.jpg") no-repeat 30px 200px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     min-height: 500px;
     margin-bottom: 135px;
 
     background: url("../img/index-can-desktop@1x.png") no-repeat 490px 0;
-
   }
 }
 
@@ -28,7 +27,7 @@
 
   background: $color-promo-green url("../img/index-background-mobile@1x.jpg") no-repeat center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 100px;
     margin-bottom: 50px;
     margin-left: -30px;
@@ -49,11 +48,11 @@
   font-weight: 400;
   line-height: 36px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 450px;
     padding-right: 200px;
     padding-top: 0;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 
     color: $font-color-black;
     font-size: 60px;
@@ -68,7 +67,7 @@
   line-height: 14px;
   text-transform: uppercase;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -80,7 +79,7 @@
   margin: auto;
   width: 280px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 254px;
     margin-left: 0;
     padding: 15px 0;
@@ -96,7 +95,7 @@
   left: 50%;
   margin-left: -140px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

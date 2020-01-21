@@ -1,12 +1,12 @@
 .example {
   background-color: $background-gray;
 
-  @media (min-width:$tablet-width){
+  @media (min-width: $tablet-width) {
     padding-top: 0;
     background-image: linear-gradient(to bottom, white 57.3%, $background-gray 57.3%);
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     background-image: linear-gradient(to bottom, white 30.6%, $background-gray 30.6%);
   }
 }
@@ -15,7 +15,11 @@
   max-width: 450px;
   margin: auto;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $tablet-width) {
+    max-width: 1000px;
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -37,9 +41,9 @@
   border: 1px solid $border-gray;
   border-radius: 3px;
 
-  @media (min-width:$tablet-width) {
-    width: 165px;
-    margin-right: 40px;
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    margin-right: 50px;
     padding-bottom: 25px;
     padding-top: 22px;
   }
@@ -55,7 +59,7 @@
   color: $font-color-black;
   line-height: 60px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 45px;
     padding-top: 0;
     font-size: 60px;
@@ -71,7 +75,7 @@
   text-transform: uppercase;
   color: $font-color-black;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
   }
 }
@@ -82,7 +86,7 @@
   width: 100%;
   margin: auto;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 420px;
     margin: 0;
   }
@@ -103,7 +107,7 @@
 
   background-color: $background-gray;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     bottom: -5px;
 
     width: auto;
@@ -115,7 +119,7 @@
     background-color: $color-white;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     background-color: $background-gray;
   }
 }
@@ -131,7 +135,7 @@
   text-align: center;
   color: $font-color-black;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 200px;
     margin-bottom: 0;
     margin-top: 8px;
@@ -141,7 +145,7 @@
     text-align: right;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: inherit;
     margin-top: 40px;
 
@@ -152,7 +156,7 @@
 .example__intro {
   padding-bottom: 25px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 60px;
     margin-bottom: 25px;
 
@@ -160,7 +164,7 @@
     line-height: 24px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 450px;
     margin-top: 145px;
     margin-bottom: 40px;
@@ -172,29 +176,29 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: column;
   }
 }
 
 .example__slider {
-  min-height: 362px;
+  min-height: 325px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     min-height: 718px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     min-height: 667px;
   }
 }
 
 .example__block__sum {
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-left: 60px;
   }
 }

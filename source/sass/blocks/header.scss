@@ -6,7 +6,7 @@
 
   border-bottom: solid 1px $border-light-gray;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
@@ -20,12 +20,12 @@
   align-self: flex-start;
   padding: 10px 20px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0 95px 0 0;
     padding: 25px 0 14px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 50%;
     margin-right: 0;
     padding-top: 54px;
@@ -42,11 +42,11 @@
 }
 
 .header__logo__image {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 173px;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 202px;
   }
 }

@@ -26,8 +26,8 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="title__h1 container">Подбор программы</h1>
-      <p class="form-intro">Заполните анкету и мы подберем<br/>программу питания для вашего кота</p>
+      <h1 class="form__title container">Подбор программы</h1>
+      <p class="form__intro container">Заполните анкету и мы подберем<br/>программу питания для вашего кота</p>
       <form class="form" action="/echo" method="post">
         <div class="form__wrapper-top">
           <fieldset class="form__info">
@@ -66,7 +66,7 @@
         </div>
 
         <fieldset class="form__contacts">
-          <legend class="title-stip">Контактные данные (владельца кота)</legend>
+          <legend>Контактные данные (владельца кота)</legend>
           <div class="form__wrapper">
             <label for="email">E-mail:*</label>
             <input type="text" name="email" id="email" placeholder="kuklachev@gmail.com">
@@ -115,10 +115,10 @@
         </div>
       </form>
 
-      <section class="address">
+      <section class="address address--second-page">
         <div class="address__wrapper container">
           <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="address__description">ул. Большая Конюшенная, д. 19/8<span class="address__description-city">Санкт-Петербург</span></p>
         </div>
         <div class="address__map">
             <img class="address__img" src="img/map.jpg" width="320" height="365" alt="Заглушка карты">
