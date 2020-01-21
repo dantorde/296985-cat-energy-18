@@ -14,6 +14,12 @@
 .example__container {
   max-width: 450px;
   margin: auto;
+
+  @media (min-width:$desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .example__block {
@@ -28,7 +34,7 @@
 
   text-align: center;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $border-gray;
   border-radius: 3px;
 
   @media (min-width:$tablet-width) {
@@ -137,6 +143,7 @@
 
   @media (min-width:$desktop-width) {
     max-width: inherit;
+    margin-top: 40px;
 
     text-align: left;
   }
@@ -155,57 +162,9 @@
 
   @media (min-width:$desktop-width) {
     width: 450px;
-    margin-top: 140px;
+    margin-top: 145px;
+    margin-bottom: 40px;
   }
-}
-
-.before-after__image {
-  display: none;
-  margin-bottom: 40px;
-}
-
-.before-after__image--active {
-  display: block;
-  margin: auto;
-}
-
-.example__stripe {
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
-  margin: auto;
-  margin-bottom: 15px;
-  margin-top: 35px;
-  padding-bottom: 35px;
-}
-
-.example__stripe-link {
-  font-family: $oswald;
-  color: $font-color-black;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.example__slider {
-  position: relative;
-  height: 12px;
-  width: 82px;
-
-  border: 1px solid #cdcdcd;
-  border-radius: 10px;
-  background-color: white;
-}
-
-.example__slider-in {
-  position: absolute;
-  top: 3px;
-  left: 4px;
-  width: 35px;
-  height: 6px;
-
-  background-color: $background-green;
-  border-radius: 10px;
 }
 
 .example__wrapper-tablet {
@@ -219,5 +178,23 @@
 
   @media (min-width:$desktop-width) {
     flex-direction: column;
+  }
+}
+
+.example__slider {
+  min-height: 362px;
+
+  @media (min-width:$tablet-width) {
+    min-height: 718px;
+  }
+
+  @media (min-width:$desktop-width) {
+    min-height: 667px;
+  }
+}
+
+.example__block__sum {
+  @media (min-width:$desktop-width) {
+    margin-left: 60px;
   }
 }
