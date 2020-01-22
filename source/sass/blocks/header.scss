@@ -22,13 +22,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 95px 0 0;
-    padding: 22px 0 14px;
+    padding: 22px 0 14px 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
     margin-right: 0;
     padding-top: 54px;
+    padding-left: 0;
   }
 
   &:hover,

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин фитнес еды для котиков «Кэт энерджи»</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -16,18 +17,18 @@
             alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-menu-list">
-          <li class="main-menu-list__item"><a href="index.html">Главная</a></li>
-          <li class="main-menu-list__item"><a  href="catalog.html">Каталог продукции</a></li>
-          <li class="main-menu-list__item  main-menu-list__item-active"><a href="form.html">Подбор программы</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__list__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__list__item"><a  href="catalog.html">Каталог продукции</a></li>
+          <li class="main-nav__list__item  main-nav__list__item-active"><a href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
       <h1 class="form__title container">Подбор программы</h1>
-      <p class="form__intro container">Заполните анкету и мы подберем<br/>программу питания для вашего кота</p>
+      <p class="form__intro container container--form__intro">Заполните анкету и мы подберем<br/>программу питания для вашего кота</p>
       <form class="form" action="/echo" method="post">
         <div class="form__wrapper-top">
           <fieldset class="form__info">
@@ -49,7 +50,7 @@
 
           <fieldset class="form__target">
             <div class="form__wrapper form__wrapper--target">
-              <input class="visually-hidden" type="radio" name="supply" id="slim" value="Похудение">
+              <input class="visually-hidden" type="radio" name="supply" id="slim" value="Похудение" checked>
               <label for="slim">Похудение</label>
             </div>
 
@@ -89,22 +90,22 @@
           <div class="form__plus__wrapper">
             <div class="form__wrapper form__wrapper--plus">
               <input  class="visually-hidden" type="checkbox" checked name="plus" id="sugar">
-              <label for="bosh">Сахарозаменитель</label>
+              <label for="sugar">Сахарозаменитель</label>
             </div>
 
             <div class="form__wrapper form__wrapper--plus">
               <input  class="visually-hidden" type="checkbox" name="plus" id="water">
-              <label for="interscol">Питьевая вода</label>
+              <label for="water">Питьевая вода</label>
             </div>
 
             <div class="form__wrapper form__wrapper--plus">
               <input  class="visually-hidden" type="checkbox" checked name="plus" id="milk">
-              <label for="makita">Молоко</label>
+              <label for="milk">Молоко</label>
             </div>
 
             <div class="form__wrapper form__wrapper--plus">
               <input  class="visually-hidden" type="checkbox" name="plus" id="vitamins">
-              <label for="dewalt">Витамины</label>
+              <label for="vitamins">Витамины</label>
             </div>
           </div>
         </fieldset>
