@@ -67,4 +67,8 @@
 
 .address__description-city {
   display: block;
+  
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
