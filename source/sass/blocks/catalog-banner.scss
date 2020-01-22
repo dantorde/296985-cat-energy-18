@@ -1,39 +1,41 @@
 .catalog-banner {
+  width: 280px;
   min-height: 289px;
-  margin: 40px 20px;
+  margin: 40px auto;
 
   background: $color-promo-green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
     min-height: 200px;
+    margin: 70px auto;
 
     background: $color-promo-green url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
   }
-  
+
   @media (min-width: $desktop-width) {
     width: 245px;
     padding-left: 0;
     padding-right: 0;
-    
-    background: $color-promo-green url("../img/gift-photo-desktop@1x.jpg") no-repeat center;    
+
+    background: $color-promo-green url("../img/gift-photo-desktop@1x.jpg") no-repeat center;
   }
 }
 
-.catalog-banner__intro{
+.catalog-banner__intro {
   position: relative;
 
   width: 160px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-top: 170px;
 
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  font-weight: 400;
   color: $font-color-white;
   text-align: center;
 
-    &::after {
+  &::after {
     position: absolute;
     content: "";
     top: 50px;
@@ -46,10 +48,10 @@
 
     background: url("../img/icon-gift.svg") no-repeat;
 
-      @media (min-width: $tablet-width) {
-        top: 65px;
-        left: -300px;
-      }
+    @media (min-width: $tablet-width) {
+      top: 65px;
+      left: -300px;
+    }
   }
 
   @media (min-width: $tablet-width) {

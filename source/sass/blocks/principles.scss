@@ -2,15 +2,15 @@
   display: block;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 45px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 50px;
     padding-bottom: 30px;
     border-bottom: 1px solid $border-light-gray;
   }
 
-  @media (min-width:$desktop-width) {
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
 
     border: none;
@@ -27,7 +27,7 @@
   line-height: 60px;
   color: $font-color-black;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 70px;
 
     font-size: 60px;
@@ -41,14 +41,14 @@
 
   list-style: none;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
 
     padding-left: 0;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
   }
 }
@@ -76,7 +76,7 @@
     z-index: -1;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     box-sizing: border-box;
     width: 230px;
     min-height: 230px;
@@ -86,9 +86,9 @@
     font-size: 16px;
     line-height: 24px;
 
-    @media (min-width:$desktop-width) {
-        margin-right: 0;
-      }
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
 
     &:nth-child(1) {
       margin-bottom: 90px;
@@ -98,7 +98,7 @@
       position: absolute;
       content: "";
       top: -2px;
-      left: 0px;
+      left: 0;
 
       display: block;
       width: 80px;
@@ -110,9 +110,9 @@
   }
 
   &:nth-child(2n) {
-    @media (min-width:$tablet-width) {
-    margin-right: 0;
-  }
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -129,12 +129,11 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     left: 0;
     width: 80px;
     height: 80px;
   }
-
 }
 
 .principles__item--easy::after {
@@ -150,7 +149,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     left: 0;
     width: 80px;
     height: 80px;
@@ -170,7 +169,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     left: 0;
     width: 80px;
     height: 80px;
@@ -190,7 +189,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     left: 0;
     width: 80px;
     height: 80px;
@@ -198,7 +197,7 @@
 }
 
 .principles__item--healthy::before {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     content: "1";
     position: absolute;
     top: 90px;
@@ -211,7 +210,7 @@
 }
 
 .principles__item--easy::before {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     content: "2";
     position: absolute;
     top: 90px;
@@ -224,7 +223,7 @@
 }
 
 .principles__item--simply::before {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     content: "3";
     position: absolute;
     top: 90px;
@@ -237,7 +236,7 @@
 }
 
 .principles__item--quickly::before {
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     content: "4";
     position: absolute;
     top: 90px;

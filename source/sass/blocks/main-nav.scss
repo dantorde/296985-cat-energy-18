@@ -1,12 +1,12 @@
 .main-nav {
   position: relative;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-grow: 1;
     margin: 0;
   }
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 100px;
   }
 }
@@ -24,7 +24,7 @@
   background: url("../img/icon-mobile-menu.svg") no-repeat;
   cursor: pointer;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -32,7 +32,7 @@
 .main-nav--opened {
   width: 100%;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: auto;
   }
 }
