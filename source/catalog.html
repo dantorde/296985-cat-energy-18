@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин фитнес еды для котиков «Кэт энерджи»</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -16,19 +17,19 @@
             alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav  main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-menu-list">
-          <li class="main-menu-list__item"><a href="index.html">Главная</a></li>
-          <li class="main-menu-list__item main-menu-list__item-active"><a href="">Каталог продукции</a></li>
-          <li class="main-menu-list__item"><a href="form.html">Подбор программы</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__list__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__list__item main-nav__list__item-active"><a href="">Каталог продукции</a></li>
+          <li class="main-nav__list__item"><a href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="main">
       <h1 class="catalog-list__title container">Каталог продукции</h1>
-      <ul class="catalog-list">
+      <ul class="catalog-list container container--catalog-list">
         <li class="catalog-list__item">
           <a class="catalog-list__item__wrapper" href="catalog-list__item.html">
             <picture>
@@ -220,7 +221,11 @@
         </li>
         <li class="catalog-list__item catalog-list__item--load">
           <a class="catalog-list__item__wrapper catalog-list__item__wrapper--load" href="catalog-list__item.html">
-            <img class="catalog-list__item__image catalog-list__item__image--load" src="img/icon-plus-mobile.svg" width="30" height="30" alt="Показать все">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/icon-plus.svg">
+              <source media="(min-width: 768px)" srcset="img/icon-plus.svg">
+              <img class="catalog-list__item__image catalog-list__item__image--load" src="img/icon-plus-mobile.svg" width="30" height="30" alt="Показать все">
+            </picture>
             <h3 class="catalog-list__item__title">Показать еще 100500 товаров</h3>
             <p class="catalog-list__item__info catalog-list__item__info--load">На самом деле вкусов гораздо больше!</p>
           </a>

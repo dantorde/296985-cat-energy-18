@@ -1,28 +1,53 @@
 .main-nav {
   position: relative;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     margin: 0;
+    padding-right: 30px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 100px;
+    padding-right: 0;
+    width: auto;
+  }
+
+  &--nojs {
+    .main-nav__toggle {
+      display: none;
+    }
+  }
+
+  &--closed {
+    .main-nav__list {
+      display: none;
+    }
   }
 }
 
 .main-nav__toggle {
   position: absolute;
   content: "";
+  top: -42px;
+  right: 20px;
+  z-index: 2;
 
   width: 24px;
   height: 18px;
 
   vertical-align: bottom;
 
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
   border: none;
-  background: url("../img/icon-mobile-menu.svg") no-repeat;
+
   cursor: pointer;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -53,4 +78,89 @@
 
   cursor: pointer;
   outline: none;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    width: 100%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+  }
+}
+
+.main-nav__list__item {
+  a {
+    display: block;
+
+    padding: 24px 10px 20px;
+    font-family: $oswald;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $font-color-black;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid $light-gray;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+      margin-bottom: 9px;
+      padding: 23px 0 8px;
+
+      font-size: 18px;
+      font-weight: 400;
+      color: $color-dark-black;
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+    }
+  }
+
+  a:hover,
+  a:focus {
+    opacity: 0.6;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+
+  &--index a {
+    @media (min-width: $desktop-width) {
+      color: $font-color-white;
+    }
+  }
+}
+
+.main-nav__list__item-active {
+  a {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $border-green;
+    }
+  }
+
+  &--index a {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $color-white;
+    }
+  }
 }

@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    background-image: linear-gradient(to bottom, white 57.3%, $background-gray 57.3%);
+    background-image: linear-gradient(to bottom, white 55.5%, $background-gray 55.5%);
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +22,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    max-width: 2000px;
     justify-content: space-between;
   }
 }
@@ -189,7 +190,7 @@
   min-height: 325px;
 
   @media (min-width: $tablet-width) {
-    min-height: 718px;
+    min-height: 710px;
   }
 
   @media (min-width: $desktop-width) {
