@@ -56,6 +56,14 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+  
+  &--email {
+    position: relative;
+  }
+  
+  &--tel {
+    position: relative;
+  }
 }
 
 .form .form__target {
@@ -136,13 +144,12 @@
   border: 1px solid $light-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 4px 10px 20px;
+    padding: 10px 4px 10px 20px;
 
     font-size: 20px;
   }
 
   &--invalid {
-    padding: 12px 12px 11px 13px;
     border: 2px solid #ff8282;
   }
 
@@ -155,6 +162,10 @@
     padding: 11px 12px 11px 13px;
     border: 2px solid $font-color-grey;
     outline: none;
+    
+    @media (min-width: $tablet-width) {
+    padding: 9px 12px 9px 19px;
+    }
   }
 }
 
@@ -359,15 +370,23 @@
   }
 
   &:hover {
-    padding: 13px;
+    padding: 10px;
     border: 1px solid #cdcdcd;
-  }
+    
+    @media (min-width: $tablet-width) {
+      padding: 10px 10px 10px 20px;
+    }
+  }  
 
   &:focus,
   &:active {
-    padding: 12px;
+    padding: 9px;
     border: 2px solid $font-color-grey;
     outline: none;
+    
+    @media (min-width: $tablet-width) {
+      padding: 9px 10px 10px 19px;
+    }
   }
 }
 
@@ -437,5 +456,66 @@
 .form__target {
   @media (min-width: $desktop-width) {
     width: 47%;
+  }
+}
+
+.form__input-svg {
+  position: absolute;
+  display: block;
+
+  &--email {
+    top: 16px;
+    right: 16px;
+    width: 17px;
+    height: 13px;
+  }
+
+  &--tel {
+    top: 13px;
+    right: 13px;
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--email {
+      top: 20px;
+      right: 20px;
+    }
+
+    &--tel {
+      top: 17px;
+      right: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--tel {
+      right: 19px;
+    }
+  }
+}
+
+.form input--invalid + .form__input-svg {
+  fill: #ff8282;
+}
+
+.form input:hover + .form__input-svg {
+  fill: $color-dark-black;
+}
+
+.form input:focus + .form__input-svg {
+  fill: $background-green;
+}
+
+.form__wrapper--email input[type=text] {
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+  }
+}
+
+.form__wrapper--tel input[type=text] {
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
   }
 }
