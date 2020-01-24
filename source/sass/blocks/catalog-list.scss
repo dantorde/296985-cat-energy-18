@@ -32,6 +32,10 @@
     font-size: 60px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
 }
 
 .catalog-list__item {

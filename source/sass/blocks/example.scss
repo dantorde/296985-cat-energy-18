@@ -195,11 +195,18 @@
 
   @media (min-width: $desktop-width) {
     min-height: 667px;
+    margin-top: -15px;
   }
 }
 
 .example__block__sum {
   @media (min-width: $desktop-width) {
     margin-left: 60px;
+  }
+}
+
+.example__info {
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
   }
 }

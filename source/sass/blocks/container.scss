@@ -16,24 +16,12 @@
     padding-left: 0;
   }
 
-  &--catalog-list {
-    @media (max-width: $mobile-max-width) {
-      padding-right: 0;
-      padding-left: 0;
-    }
-
-    @media (min-width: $tablet-width) {
-      max-width: 850px;
-    }
-  }
-
   &--form__intro {
     @media (min-width: $tablet-width) {
       padding-left: 70px;
     }
   }
 }
-
 
 @media (min-width: $desktop-width) {
   .container {
@@ -46,5 +34,29 @@
       flex-direction: row;
       justify-content: space-between;
     }
+  }
+}
+
+.container--example {
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    margin-left: 0;
+  }
+}
+
+.container--catalog-list {
+  @media (max-width: $mobile-max-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 850px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
