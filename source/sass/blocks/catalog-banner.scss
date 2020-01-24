@@ -1,9 +1,14 @@
 .catalog-banner {
   width: 280px;
   min-height: 289px;
-  margin: 40px auto;
+  margin: 40px auto 33px auto;
 
   background: $color-promo-green url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: $color-promo-green url("../img/gift-photo-mobile@2x.jpg") no-repeat center;
+    background-size: 280px auto;
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -11,6 +16,11 @@
     margin: 70px auto;
 
     background: $color-promo-green url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
+    
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $color-promo-green url("../img/gift-photo-tablet@2x.jpg") no-repeat center;
+      background-size: 708px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -19,6 +29,11 @@
     padding-right: 0;
 
     background: $color-promo-green url("../img/gift-photo-desktop@1x.jpg") no-repeat center;
+    
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: $color-promo-green url("../img/gift-photo-desktop@2x.jpg") no-repeat center;
+      background-size: 245px auto;
+    }
   }
 }
 

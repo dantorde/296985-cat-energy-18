@@ -1,14 +1,14 @@
 .catalog-plus {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px 0 0 0;
+  margin: 35px 0 0 0;
   padding: 0;
 
   list-style: none;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    margin-top: 75px;
+    margin-top: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +28,7 @@
   margin: auto;
   padding: 10px 0 19px 0;
 
-  border-top: 1px solid #cdcdcd;
+  border: 1px solid #cdcdcd;
   background: none;
 
   &:last-child {
@@ -165,15 +165,17 @@
 }
 
 .catalog-plus__title {
+  margin-top: 5px;
+
   font-family: $oswald;
   color: $font-color-black;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  
+
   @media (min-width: $tablet-width) {
     margin-top: 40px;
-    
+
     font-size: 36px;
     line-height: 50px;
   }
