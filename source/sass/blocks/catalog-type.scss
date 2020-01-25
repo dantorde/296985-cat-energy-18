@@ -210,4 +210,17 @@
       right: -50px;
     }
   }
+
+  &:hover::after,
+  &:hover::after {
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      right: -60px;
+
+      width: 34px;
+      height: 12px;
+
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    }
+  }
 }

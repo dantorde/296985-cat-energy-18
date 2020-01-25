@@ -106,7 +106,7 @@
   }
 }
 
-.main-nav__list__item {
+.main-nav__list-item {
   a {
     display: block;
 
@@ -152,7 +152,7 @@
   }
 }
 
-.main-nav__list__item-active {
+.main-nav__list-item-active {
   a {
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid $border-green;
