@@ -5,6 +5,7 @@
     <title>Интернет-магазин фитнес еды для котиков «Кэт энерджи»</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="body-index">
     <div style="display: none;">
@@ -23,9 +24,9 @@
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
-          <li class="main-nav__list__item main-nav__list__item--index main-nav__list__item-active main-nav__list__item-active--index"><a>Главная</a></li>
-          <li class="main-nav__list__item main-nav__list__item--index"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="main-nav__list__item main-nav__list__item--index"><a href="form.html">Подбор программы</a></li>
+          <li class="main-nav__list-item main-nav__list-item--index main-nav__list-item-active main-nav__list-item-active--index"><a>Главная</a></li>
+          <li class="main-nav__list-item main-nav__list-item--index"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="main-nav__list-item main-nav__list-item--index"><a href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
@@ -38,7 +39,10 @@
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
           </div>
         </div>
-        <img class="promo__image" src="img/index-can-mobile@1x.png"  srcset="img/index-can-mobile@2x.png" width="280" height="281" alt="Корм Курица 500 грамм">
+        <picture>
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@1x.webp 2x">
+          <img class="promo__image" src="img/index-can-mobile@1x.png"  srcset="img/index-can-mobile@2x.png" width="280" height="281" alt="Корм Курица 500 грамм">
+        </picture>
         <a class="promo__button button" href="form.html">Подобрать программу</a>
       </section>
       <section class="catalog-type container">
@@ -79,21 +83,24 @@
             <div class="example__wrapper-tablet">
               <div class="example__wrapper">
                 <dl class="example__block">
-                  <dt class="example__block__title">5 кг</dt>
-                  <dd class="example__block__description">снижение веса</dd>
+                  <dt class="example__block-title">5 кг</dt>
+                  <dd class="example__block-description">снижение веса</dd>
                 </dl>
                 <dl class="example__block">
-                  <dt class="example__block__title">60 дней</dt>
-                  <dd class="example__block__description">затрачено времени</dd>
+                  <dt class="example__block-title">60 дней</dt>
+                  <dd class="example__block-description">затрачено времени</dd>
                 </dl>
               </div>
-              <p class="example__block__costs">Затраты на питание: <span class="example__block__sum">15 000 руб.</span></p>
+              <p class="example__block-costs">Затраты на питание: <span class="example__block-sum">15 000 руб.</span></p>
             </div>
           </div>
           <div class="example__slider slider">
             <div class="slider__picture">
               <div class="slider__slide">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img//before-desktop@1x.webp, img//before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img//before-tablet@1x.webp, img//before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img//before-mobile@1x.webp, img//before-mobile@2x.webp 2x">
                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                   <img class="slider__image slider__image--display" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png" width="320" height="240" alt="До Cat Energy Slim">
@@ -101,6 +108,9 @@
               </div>
             <div class="slider__slide">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
                 <img class="slider__image" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png" width="320" height="240" alt="После Cat Energy Slim">
@@ -127,28 +137,28 @@
     <footer class="footer container--no-padding">
       <div class="footer__container container">
         <a class="footer__logo">
-          <img class="footer__logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
+          <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин фитнес еды для котиков «Кэт энерджи»">
         </a>
         <div class="footer__social">
-          <ul class="footer__social__list">
-            <li class="footer__social__item">
-              <a class="footer__social__link footer__social__link--vk" href="https://vk.com">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--vk" href="https://vk.com">
                 <svg width="22" height="12">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
-            <li class="footer__social__item">
-              <a class="footer__social__link footer__social__link--insta" href="https://www.instagram.com">
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--insta" href="https://www.instagram.com">
                 <svg width="17" height="17">
                   <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Инстаграме</span>
               </a>
             </li>
-            <li class="footer__social__item">
-              <a class="footer__social__link footer__social__link--fb" href="https://facebook.com">
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--fb" href="https://facebook.com">
                 <svg width="10" height="19">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
@@ -158,8 +168,8 @@
           </ul>
         </div>
         <div class="footer__copyright container--no-padding">
-          <a class="footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="footer__copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="footer__copyright-img" width="41" height="41">
               <use xlink:href="img/sprite.svg#icon-academy"></use>
             </svg>

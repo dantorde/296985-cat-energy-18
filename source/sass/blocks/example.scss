@@ -68,7 +68,7 @@
   }
 }
 
-.example__block__title {
+.example__block-title {
   font-family: $oswald;
   font-size: 24px;
   font-weight: 400;
@@ -93,7 +93,7 @@
   }
 }
 
-.example__block__description {
+.example__block-description {
   position: absolute;
   bottom: -16px;
   left: -20px;
@@ -125,7 +125,7 @@
   }
 }
 
-.example__block__costs {
+.example__block-costs {
   margin: 25px 0 35px 0;
 
   font-family: $oswald;
@@ -199,7 +199,7 @@
   }
 }
 
-.example__block__sum {
+.example__block-sum {
   @media (min-width: $desktop-width) {
     margin-left: 60px;
   }

@@ -64,7 +64,7 @@
   }
 }
 
-.footer__copyright__link {
+.footer__copyright-link {
   color: $font-color-grey;
   font-size: 16px;
   font-weight: 400;
@@ -75,13 +75,13 @@
   }
 }
 
-.footer__copyright__link-logo {
+.footer__copyright-logo {
   @media (min-width: $tablet-width) {
     margin-left: 20px;
   }
 }
 
-.footer__social__list {
+.footer__social-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,7 +92,7 @@
   list-style: none;
 }
 
-.footer__social__link {
+.footer__social-link {
   &:hover,
   &:focus {
     fill: $background-green;

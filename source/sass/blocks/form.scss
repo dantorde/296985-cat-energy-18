@@ -153,6 +153,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -327,7 +328,7 @@
   opacity: 0.3;
 }
 
-.form__plus__wrapper {
+.form__plus-wrapper {
   margin-top: 5px;
 
   @media (min-width: $tablet-width) {
@@ -468,7 +469,7 @@
   }
 }
 
-.form__submit__wrapper {
+.form__submit-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -484,6 +485,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
