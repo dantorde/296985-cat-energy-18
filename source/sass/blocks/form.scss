@@ -400,11 +400,9 @@
   }
 
   &:hover {
-    padding: 10px;
     border: 1px solid #cdcdcd;
 
     @media (min-width: $tablet-width) {
-      padding: 10px 10px 10px 20px;
     }
   }
 

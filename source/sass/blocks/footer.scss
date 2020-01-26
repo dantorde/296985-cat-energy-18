@@ -83,16 +83,17 @@
 
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 128px;
   margin: auto;
   padding: 0;
   list-style: none;
 }
 
 .footer__social-link {
+  fill: #666666;
+
   &:hover,
   &:focus {
     fill: $background-green;
@@ -135,4 +136,12 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.footer__social-item {
+  margin-right: 35px;
+}
+
+.footer__social-item:last-child {
+  margin-right: 0;
 }
